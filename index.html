@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tres meses con Karol</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="cielo-animado" aria-hidden="true"></div>
+<div class="luna-decorativa" aria-hidden="true"></div>
+    <header class="portada">
+        <nav class="menu">
+            <span>Karol & Cristian</span>
+            <div>
+                <a href="#momentos">Momentos</a>
+                <a href="#playlist">Playlist</a>
+                <a href="#carta">Mi carta</a>
+            </div>
+        </nav>
+
+        <div class="presentacion">
+            <p class="subtitulo">UN PEQUEÑO UNIVERSO PARA NOSOTROS</p>
+            <h1>Tres meses<br>con vos</h1>
+            <p class="descripcion">
+                Tres meses de recuerdos, sonrisas y un amor que sigue creciendo.
+            </p>
+            <a class="boton" href="#momentos">Descubrir nuestro mundo ✦</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="momentos" class="seccion">
+    <p class="etiqueta">UN PEDACITO DE NOSOTROS</p>
+    <h2>Tu bello arte y nuestros pequeños momentos</h2>
+    <p>
+        Un rinconcito donde guardo las cosas que nacen de tus manos
+        y los recuerdos que fuimos creando juntos.
+    </p>
+
+    <h3 class="titulo-galeria">Tu bello arte</h3>
+    <p>Cada dibujo tuyo tiene algo de vos, y por eso es tan especial para mí.</p>
+    <div id="galeria-dibujos" class="galeria"></div>
+
+    <h3 class="titulo-galeria">Nuestros pequeños momentos</h3>
+    <p>Pequeños recuerdos que siempre voy a querer conservar.</p>
+    <div id="galeria-recuerdos" class="galeria"></div>
+
+    <div class="frase-galeria">
+        Quizás para vos sean solamente dibujos y capturas,
+        pero para mí son pedacitos de vos y de nosotros
+        que quiero guardar para siempre.
+    </div>
+</section>
+
+        <section id="razones" class="seccion">
+    <p class="etiqueta">UN MONTÓN DE PEQUEÑOS DETALLES</p>
+    <h2>Pequeñas cosas que amo de vos</h2>
+    <p>Tocá cada tarjeta y descubrí lo que tengo para decirte.</p>
+
+    <div class="razones">
+        <div class="razon" onclick="this.classList.toggle('abierta')">
+            <div class="razon-interior">
+                <div class="razon-frente">Tu sonrisa ✦</div>
+                <div class="razon-atras">Porque incluso a través de una pantalla conseguís hacerme sonreír.</div>
+            </div>
+        </div>
+
+        <div class="razon" onclick="this.classList.toggle('abierta')">
+            <div class="razon-interior">
+                <div class="razon-frente">Tu forma de ser ✦</div>
+                <div class="razon-atras">Porque tenés una manera tan tuya de hacer que mis días sean especiales.</div>
+            </div>
+        </div>
+
+        <div class="razon" onclick="this.classList.toggle('abierta')">
+            <div class="razon-interior">
+                <div class="razon-frente">Tus dibujos ✦</div>
+                <div class="razon-atras">Porque cada dibujo tuyo es algo que guardo con muchísimo cariño.</div>
+            </div>
+        </div>
+
+        <div class="razon" onclick="this.classList.toggle('abierta')">
+            <div class="razon-interior">
+                <div class="razon-frente">Nuestras charlas ✦</div>
+                <div class="razon-atras">Porque podría pasar horas hablando con vos y todavía querer un ratito más.</div>
+            </div>
+        </div>
+
+        <div class="razon" onclick="this.classList.toggle('abierta')">
+            <div class="razon-interior">
+                <div class="razon-frente">Tus ojitos ✦</div>
+                <div class="razon-atras">Porque cada vez que los veo me enamoro un poquito más.</div>
+            </div>
+        </div>
+
+        <div class="razon" onclick="this.classList.toggle('abierta')">
+            <div class="razon-interior">
+                <div class="razon-frente">Simplemente vos ✦</div>
+                <div class="razon-atras">Porque no necesito una razón especial para quererte. Me encanta que seas vos.</div>
+            </div>
+        </div>
+    </div>
+</section><section id="regalo" class="seccion">
+    <p class="etiqueta">UNA SORPRESA PARA VOS</p>
+    <h2>Un pequeño regalo</h2>
+    <p>Hay algo que preparé especialmente para vos. ¿Te animás a descubrirlo?</p>
+
+    <div class="cofre-contenedor">
+        <button class="cofre" id="cofre" onclick="abrirRegalo()">
+            <span class="brillo">✦</span>
+            <span class="cofre-tapa"></span>
+            <span class="cofre-cuerpo">✦</span>
+            <span class="cerradura">✧</span>
+        </button>
+        <p class="texto-cofre" id="texto-cofre">Tocá el cofre para abrirlo</p>
+    </div>
+
+    <div class="sorpresa" id="sorpresa">
+        <p class="etiqueta">PARA MI PERSONA FAVORITA</p>
+        <h2>Si pudiera elegir de nuevo...</h2>
+        <p>
+            Te volvería a elegir a vos, entre millones de personas y en
+            cualquier parte del universo. No sé cómo tuve tanta suerte
+            de encontrarte, pero sí sé que quiero seguir creando recuerdos
+            con vos, escuchándote, riéndome con vos y compartiendo muchos
+            momentos más.
+        </p>
+        <p class="frase-final">Felices tres meses, mi niña preciosa ✦</p>
+    </div>
+</section><section id="capsula" class="seccion">
+    <p class="etiqueta">PEQUEÑOS RECUERDOS PARA SIEMPRE</p>
+    <h2>Nuestra cápsula del tiempo</h2>
+    <p>Guardé algunas cositas para que puedas descubrirlas cuando quieras.</p>
+
+    <div class="capsula-contenedor">
+        <div class="capsula-objeto" id="capsula-objeto">
+            <span class="capsula-brillo">✦</span>
+            <span class="capsula-icono">✧</span>
+            <span class="capsula-texto">NUESTRO UNIVERSO</span>
+        </div>
+
+        <button class="boton" onclick="descubrirRecuerdo()">
+            Descubrir un recuerdo ✦
+        </button>
+
+        <div class="recuerdo-revelado" id="recuerdo-revelado">
+            <p class="etiqueta">UN MENSAJITO PARA VOS</p>
+            <p id="mensaje-recuerdo"></p>
+        </div>
+    </div>
+</section><section id="contador" class="seccion">
+    <p class="etiqueta">DESDE QUE EMPEZÓ NUESTRA HISTORIA</p>
+    <h2>El tiempo que llevamos juntos</h2>
+    <p>Cada segundo a tu lado es un recuerdo más.</p>
+
+    <div class="contador">
+        <div class="unidad-tiempo">
+            <span id="dias">0</span>
+            <p>Días</p>
+        </div>
+        <div class="unidad-tiempo">
+            <span id="horas">0</span>
+            <p>Horas</p>
+        </div>
+        <div class="unidad-tiempo">
+            <span id="minutos">0</span>
+            <p>Minutos</p>
+        </div>
+        <div class="unidad-tiempo">
+            <span id="segundos">0</span>
+            <p>Segundos</p>
+        </div>
+    </div>
+
+    <p class="frase-contador">
+        Y todavía nos quedan muchísimos momentos por vivir juntos. ✦
+    </p>
+</section><section id="deseos" class="seccion">
+    <p class="etiqueta">UN PEDACITO DE MI CIELO PARA VOS</p>
+    <h2>Un cielo de deseos</h2>
+    <p class="descripcion-deseos">
+        Hay deseos que no necesitan pedirle nada al universo,
+        porque simplemente deseo que te pasen a vos.
+    </p>
+
+    <div class="cielo-deseos" id="cielo-deseos">
+        <button class="estrella-deseo" onclick="revelarDeseo(0)" aria-label="Descubrir deseo 1">✦</button>
+        <button class="estrella-deseo" onclick="revelarDeseo(1)" aria-label="Descubrir deseo 2">✦</button>
+        <button class="estrella-deseo" onclick="revelarDeseo(2)" aria-label="Descubrir deseo 3">✦</button>
+        <button class="estrella-deseo" onclick="revelarDeseo(3)" aria-label="Descubrir deseo 4">✦</button>
+        <button class="estrella-deseo" onclick="revelarDeseo(4)" aria-label="Descubrir deseo 5">✦</button>
+        <button class="estrella-deseo" onclick="revelarDeseo(5)" aria-label="Descubrir deseo 6">✦</button>
+        <button class="estrella-deseo" onclick="revelarDeseo(6)" aria-label="Descubrir deseo 7">✦</button>
+    </div>
+
+    <div class="deseo-revelado" id="deseo-revelado" aria-live="polite">
+        <p id="texto-deseo"></p>
+    </div>
+</section><!-- ===== EL BOTÓN DE LOS ABRAZOS ===== -->
+
+<section id="abrazos" class="seccion">
+    <p class="etiqueta">UN ABRACITO PARA VOS</p>
+
+    <h2>¿Necesitás un abrazo?</h2>
+
+    <p class="descripcion-abrazos">
+        Aunque ahora no pueda abrazarte en persona,
+        siempre voy a encontrar una forma de hacerte sentir cerquita.
+    </p>
+
+    <div class="abrazo-contenedor">
+        <button class="boton" id="boton-abrazo" onclick="darAbrazo()">
+            Necesito un abrazo ✦
+        </button>
+
+        <div class="abrazo-ilustracion" id="abrazo-ilustracion">
+            <img
+                src="abrazo-karol.png"
+                alt="Cristian y Karol abrazándose en versión chibi"
+            >
+        </div>
+    </div>
+</section><!-- ===== MENSAJES ALEATORIOS PARA KAROL ===== -->
+
+<section id="mensajes-sorpresa" class="seccion">
+    <p class="etiqueta">UNA PEQUEÑA SORPRESA PARA VOS</p>
+
+    <h2>Un mensajito para mi niña</h2>
+
+    <p class="descripcion-mensajes">
+        Hay pequeñas cosas que quiero recordarte.
+        Encontrá la estrellita y descubrí una de ellas.
+    </p>
+
+    <div class="zona-mensajes" id="zona-mensajes">
+        <button
+            class="estrella-mensaje"
+            id="estrella-mensaje"
+            onclick="descubrirMensaje()"
+            aria-label="Descubrir un mensaje sorpresa"
+        >
+            ✦ Encontrame ✦
+        </button>
+    </div>
+
+    <div class="tarjeta-mensaje" id="tarjeta-mensaje">
+        <span>✧ UN MENSAJITO PARA VOS ✧</span>
+        <p id="texto-mensaje"></p>
+    </div>
+</section><section id="playlist" class="seccion">
+    <p class="etiqueta">NUESTRA MÚSICA</p>
+    <h2>Nuestra playlist</h2>
+    <p>Tres canciones que me hacen pensar en nosotros.</p>
+
+    <div class="playlist">
+
+        <article class="cancion">
+            <img src="https://img.youtube.com/vi/MldGX_mbS-o/hqdefault.jpg">
+            <h3>M.A.I</h3>
+            <p>Milo J</p>
+            <audio src="musica/M.A.I.mp3"></audio>
+            <p class="dedicatoria">Esta canción me recuerda a nosotros porque habla de encontrar a alguien que llega inesperadamente y termina convirtiéndose en una de las personas más importantes de tu vida. Y eso es exactamente lo que me pasó con vos.</p><button class="control" onclick="controlarMusica(this)">▶</button>
+            <div class="progreso"><div></div></div>
+            <span class="tiempo">0:00</span>
+        </article>
+
+        <article class="cancion">
+            <img src="https://img.youtube.com/vi/jMNRg3nHwU0/hqdefault.jpg">
+            <h3>MOROCHA</h3>
+            <p>Milo J</p>
+            <p class="dedicatoria">Esta canción me hace pensar en vos, en lo mucho que me gustás y en lo especial que sos para mí. Si pudiera elegir a alguien para dedicarle cada palabra bonita, siempre serías vos.</p><audio src="musica/MOROCHA.mp3"></audio>
+            <button class="control" onclick="controlarMusica(this)">▶</button>
+            <div class="progreso"><div></div></div>
+            <span class="tiempo">0:00</span>
+        </article>
+
+        <article class="cancion">
+            <img src="https://img.youtube.com/vi/refiBG9z_gY/hqdefault.jpg">
+            <h3>FaceTime</h3>
+            <p>LIT killah</p>
+            <p class="dedicatoria">Esta canción representa esas ganas que tengo de dejar de verte solamente a través de una pantalla. Sueño con el día en que pueda tenerte enfrente, abrazarte y no tener que despedirme por una llamada.</p><audio src="musica/Facetime.mp3"></audio>
+            <button class="control" onclick="controlarMusica(this)">▶</button>
+            <div class="progreso"><div></div></div>
+            <span class="tiempo">0:00</span>
+        </article>
+
+    </div>
+</section>
+
+        <section id="carta" class="seccion">
+    <p class="etiqueta">UN ÚLTIMO REGALITO PARA VOS</p>
+    <h2>Una carta para mi niña</h2>
+    <p>Hay palabras que merecen guardarse para siempre.</p>
+
+    <div class="sobre-contenedor">
+        <div class="sobre" id="sobre">
+            <div class="sobre-cuerpo"></div>
+            <div class="sobre-solapa"></div>
+            <div class="sobre-corazon">✦</div>
+            <div class="carta-papel">
+                <span>Para mi niña preciosa</span>
+                <p>Con mucho amor, Cristian</p>
+            </div>
+        </div>
+
+        <button class="boton" id="boton-carta" onclick="abrirCarta()">
+            Abrir mi carta ✦
+        </button>
+    </div>
+
+    <div class="carta-final" id="carta-final">
+        <p class="etiqueta">PARA VOS, KAROL</p>
+        <h2>Felices 3 meses, mi niña.</h2>
+
+        <div class="texto-carta">
+            <p>No sé ni por dónde arrancar porque siento que son muchas cosas las que quiero decirte y no sé si me alcanzarán las palabras para expresar todo lo bonito que siento por vos y todo lo que significás para mí, pero me voy a tomar un momento para escribirte algo especial y que te haga realmente feliz, porque no con cualquier persona se cumplen 3 meses en una relación como la nuestra.</p>
+
+            <p>Primero que nada, quiero agradecerte por estar todo este tiempo conmigo y por cada lindo momento que pasamos, ya sean risas, conversaciones, tonterías o hasta cuando los días son malos y vos estás ahí. Igualmente, para muchas personas 3 meses se les deben hacer poco tiempo, pero yo siento que en este tiempo compartimos un montón de cosas, aprendimos a conocernos más y fuimos creando algo que realmente valoro mucho.</p>
+
+            <p>Quiero que sepas que me hace muy feliz tenerte en mi vida y no lo digo solamente porque hoy cumplimos 3 meses y sea una fecha especial, lo digo porque de verdad me gusta mucho compartir mis días con vos. Me gusta saber de vos, escuchar cómo estuvo tu día y cómo te fue en la escuela, o si comiste o no comiste. Sé que puedo ser algo pesado porque puedo llegar a sonar como tu papá en vez de tu novio, pero lo hago porque me preocupa que estés bien. También me gusta conocer las cosas que te hacen feliz, acompañarte cuando algo sale mal y poder sacarte una sonrisa cuando más lo necesitás. Me gusta la confianza que fuimos armando y que podamos hablar de cualquier cosa, hacer chistes, molestarnos mutuamente y pasar de una conversación completamente seria a decir las mayores mierdas funables posibles XD.</p>
+
+            <p>Y hay algo que no quiero que nunca olvides, y es que sos una persona muy especial para mí. Me encantás muchísimo, me encanta tu forma de ser, tus caprichos, tus ocurrencias, tu manera de expresarte y esas cosas que seguramente vos no apreciás o no notás demasiado. Me gusta conocerte cada día un poquito más y descubrir nuevas partes de vos, darme cuenta de que siempre hay algo nuevo que me hace quererte todavía más. No necesitás ser perfecta ni cambiar nada de vos para que yo vea lo maravillosa que sos. Me gusta que seas vos, con tus virtudes, tus días buenos y también esos días en los que no tenés ganas de nada.</p>
+
+            <p>Gracias por la confianza que me das, por permitirme conocer partes de vos que quizás no compartís con cualquiera, por contarme tus cosas y dejarme acompañarte en momentos en los que necesitás hablar o simplemente tener a alguien ahí. Quiero que conmigo siempre puedas sentirte tranquila, que no tengas que fingir estar bien cuando no lo estás y que sepas que siempre me vas a poder contar lo que quieras sin miedo a que te juzgue. No siempre voy a tener las respuestas o las palabras perfectas, ni tampoco voy a saber cómo solucionar todo, pero siempre voy a escucharte, comprenderte y hacerte sentir acompañada.</p>
+
+            <p>Obviamente, no todos los días van a ser iguales y a veces podemos tener nuestros choques culturales, nuestras diferencias, malentendidos o simplemente días en los que las cosas no salgan como esperamos, pero quería que sepas que para mí esto no se trata solamente de disfrutar los momentos bonitos, también se trata de poder aprender juntos, entendernos mejor y encontrar la manera de superar las pequeñas dificultades sin olvidarnos de lo muchísimo que nos queremos. No quiero que seas alguien diferente conmigo, porque justamente lo que más valoro es poder conocerte tal cual sos.</p>
+
+            <p>Me pongo a pensar en todo lo que vivimos durante estos 3 meses, como las pérdidas de algunos amigos, ya sea Doble, Glam, Limbo, Apolo o hasta la innombrable XD, pero me da mucha ternura saber que aún seguimos juntos. También me da mucha ternura darme cuenta de cuánto cariño llegué a tenerte. Hay momentos que vistos desde afuera pueden parecer insignificantes, pero yo les tengo un valor enorme. Momentos como las pequeñas conversaciones que tenemos y que se alargan sin darnos cuenta, las bromas que hacemos y que solamente entendemos nosotros, como lo del té/mate o el arroz congrí/arroz con tierra JAJAJA, las veces en las que conseguimos hacernos reír y todos esos detalles que hacen que un día normal termine siendo más bonito gracias a vos.</p>
+
+            <p>Y todavía nos quedan muchísimas más cosas por vivir, y quiero seguir creando recuerdos con vos. Quiero seguir conociéndote, descubrir tus gustos, tus sueños, tus ideas y todas esas cosas que todavía no sé. Quiero celebrar muchos más meses a tu lado, tener anécdotas nuevas de las que podamos reírnos en un futuro y poder mirar atrás para recordar todo lo que construimos y cómo empezó todo.</p>
+
+            <p>También quiero que nunca dudes de lo importante que sos para mí. Si alguna vez tenés un día en el que sentís inseguridad, tristeza o simplemente no te ves de la misma manera en la que yo te veo, ojalá recuerdes que hay alguien que encuentra muchísimas cosas bonitas en vos. Alguien que disfruta de tu compañía, que se interesa por cómo estás y que se pone feliz con solo saber que estás bien. Me gustaría hacerte ver por un ratito todo lo lindo que yo veo cuando pienso en vos, porque a veces ni siquiera vos te das cuenta de lo especial que sos.</p>
+
+            <p>No sé qué nos espera más adelante, pero sí sé que quiero seguir compartiendo este camino de la vida con vos. No quiero apresurar las cosas ni tampoco te voy a prometer un mundo perfecto, simplemente quiero que sigamos disfrutando de nosotros mismos, cuidándonos y dándole el valor que merece lo nuestro. Para mí lo importante es que podamos seguir eligiéndonos y que nunca nos falten las ganas de hablar, de reírnos, de escucharnos y de hacer que el otro se sienta querido.</p>
+
+            <p>Gracias, mi amorcito, por estos tres meses, por cada risa que me sacaste, por cada momento hermoso que compartimos y por hacerte un lugar tan bonito en mi vida. Espero que yo también haya podido hacerte feliz, aunque sea un poquito, y que en algún momento hayas sentido todo el cariño que intento transmitirte cuando no encuentro las palabras adecuadas para hacerlo.</p>
+
+            <p>Te quiero muchísimo, mi reina de ojos lindos, y espero que este sea solamente otro de los muchos meses que todavía nos quedan por celebrar. Quiero seguir sumando días, recuerdos y motivos para sonreír con vos, y deseo muchísimo poder verte y poder decirte todo esto en persona y después besarte fuerte, porque sabés que yo beso mejor &gt;;) JAJAJA.</p>
+
+            <p class="firma-carta">
+                <strong>Felices tres meses, princesa de mis sueños hermosa.</strong>
+                Muchas gracias por ser vos y por dejarme compartir una parte de tu vida conmigo. Te amo muchísimo y espero que hoy puedas sentirte tan especial como realmente sos para mí. ❤️
+            </p>
+        </div>
+
+        <button class="boton cerrar-carta" onclick="abrirCarta()">
+            Cerrar mi carta
+        </button>
+    </div>
+</section>
+    </main>
+
+    <footer>
+        Hecho con mucho amor para Karol ✦
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
